@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    background-color: #f4f5f5;
+}
+
+.parent, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10{
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgb(238, 238, 238);
+}
+    
+.div1{ 
+    grid-area: 1 / 1 / 2 / 15;
+    background-color: #004c6c;
+}
+.div2 { 
+    grid-area: 2 / 1 / 8 / 3;
+    background-color: #004c6c;
+}
+.div3 { 
+    grid-area: 2 / 3 / 5 / 6;
+    background-color: #cb2026;
+}
+.div4 { 
+    grid-area: 2 / 6 / 5 / 9;
+    background-color: #F285D4;
+}
+.div5 { 
+    grid-area: 2 / 9 / 5 / 12; 
+    background-color: #ffc906;
+}
+.div6 { 
+    grid-area: 2 / 12 / 5 / 15;
+    background-color: #f4801f; 
+}
+.div7 { 
+    grid-area: 5 / 3 / 8 / 6; 
+    background-color: #008cd1;
+}
+.div8 { 
+    grid-area: 5 / 6 / 8 / 9;
+    background-color: #121f45; 
+}
+.div9 { 
+    grid-area: 5 / 9 / 8 / 12;
+    background-color: #202a2f; 
+}
+.div10 { 
+    grid-area: 5 / 12 / 8 / 15; 
+    background-color: #223971;
+}
+
+.div00{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div01, .div02{
+    width: 95%;
+    height: 60%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.div02{
+    height: 30%;
+    border-radius: 0 0 20px 20px;
+}
